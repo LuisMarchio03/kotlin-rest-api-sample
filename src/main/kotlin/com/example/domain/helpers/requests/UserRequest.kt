@@ -7,7 +7,6 @@ import java.util.*
 @Serializable
 class UserRequest(
     val name: String,
-    val age: Int,
     val email: String
 )
 
@@ -17,7 +16,7 @@ fun UserRequest.toUser(
     return User(
         id = id,
         name = name,
-        age = age,
+        password = UUID.randomUUID().toString(),
         email = email
     )
 }
