@@ -21,6 +21,4 @@ class UserService(private val userRepository: UserRepository) {
     suspend fun getUserById(userId: UUID): User? {
         return userRepository.findById(userId)
     }
-
-
 }
