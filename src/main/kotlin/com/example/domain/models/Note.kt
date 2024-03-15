@@ -1,6 +1,6 @@
-package com.example.models
+package com.example.domain.models
 
-import com.example.helpers.responses.NoteResponse
+import com.example.domain.helpers.responses.NoteResponse
 import java.util.UUID
 
 class Note(

@@ -1,6 +1,6 @@
-package com.example.helpers.requests
+package com.example.domain.helpers.requests
 
-import com.example.models.Note
+import com.example.domain.models.Note
 import kotlinx.serialization.Serializable
 import java.util.UUID
 

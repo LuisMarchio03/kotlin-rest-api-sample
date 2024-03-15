@@ -1,4 +1,4 @@
-package com.example.helpers.responses
+package com.example.domain.helpers.responses
 
 import kotlinx.serialization.Serializable
 

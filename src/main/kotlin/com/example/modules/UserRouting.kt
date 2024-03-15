@@ -1,9 +1,9 @@
 package com.example.modules
 
-import com.example.helpers.requests.UserRequest
-import com.example.helpers.requests.toUser
-import com.example.models.toUserResponse
-import com.example.services.UserService
+import com.example.domain.helpers.requests.UserRequest
+import com.example.domain.helpers.requests.toUser
+import com.example.domain.models.toUserResponse
+import com.example.domain.services.UserService
 import io.ktor.http.*
 import io.ktor.server.application.*
 import io.ktor.server.request.*

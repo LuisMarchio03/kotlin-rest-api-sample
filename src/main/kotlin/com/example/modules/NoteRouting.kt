@@ -1,9 +1,9 @@
 package com.example.modules
 
-import com.example.models.toNoteResponse
-import com.example.helpers.requests.NoteRequest
-import com.example.helpers.requests.toNote
-import com.example.services.NoteService
+import com.example.domain.models.toNoteResponse
+import com.example.domain.helpers.requests.NoteRequest
+import com.example.domain.helpers.requests.toNote
+import com.example.domain.services.NoteService
 import io.ktor.http.*
 import io.ktor.server.application.*
 import io.ktor.server.request.*

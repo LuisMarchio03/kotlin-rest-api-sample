@@ -1,6 +1,6 @@
-package com.example.models
+package com.example.domain.models
 
-import com.example.helpers.responses.UserResponse
+import com.example.domain.helpers.responses.UserResponse
 import java.util.*
 
 class User(

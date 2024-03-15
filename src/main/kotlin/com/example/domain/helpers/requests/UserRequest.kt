@@ -1,6 +1,6 @@
-package com.example.helpers.requests
+package com.example.domain.helpers.requests
 
-import com.example.models.User
+import com.example.domain.models.User
 import kotlinx.serialization.Serializable
 import java.util.*
 

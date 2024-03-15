@@ -1,6 +1,6 @@
-package com.example.services
+package com.example.domain.services
 
-import com.example.models.Note
+import com.example.domain.models.Note
 import kotlinx.coroutines.Dispatchers
 import org.jetbrains.exposed.sql.*
 import org.jetbrains.exposed.sql.SqlExpressionBuilder.eq

@@ -1,7 +1,7 @@
 package com.example
 
 import com.example.modules.configureNoteRouting
-import com.example.services.NoteService
+import com.example.domain.services.NoteService
 import io.ktor.serialization.kotlinx.json.*
 import io.ktor.server.application.*
 import io.ktor.server.engine.*

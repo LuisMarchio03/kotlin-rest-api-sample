@@ -1,7 +1,6 @@
-package com.example.services
+package com.example.domain.services
 
-import com.example.models.User
-import com.example.plugins.UserService
+import com.example.domain.models.User
 import kotlinx.coroutines.Dispatchers
 import org.jetbrains.exposed.sql.*
 import org.jetbrains.exposed.sql.transactions.experimental.newSuspendedTransaction
@@ -31,7 +30,7 @@ class UserService(database: Database) {
 
     // Find all Users
     suspend fun findAll(): List<User> = dbQuery {
-        UserService.Users.selectAll().map { row -> row.toUser() }
+        Users.selectAll().map { row -> row.toUser() }
     }
 
     // Find by ID
