@@ -1,16 +1,14 @@
-‡2024-03-08 10:52:59.721 [Test worker @coroutine#1] TRACE i.ktor.client.plugins.HttpPlainText - Adding Accept-Charset=UTF-8 to http:///
-¤2024-03-08 10:52:59.753 [DefaultDispatcher-worker-1 @call-context#2] INFO  ktor.test - No ktor.deployment.watch patterns specified, automatic reload is not active.
-}2024-03-08 10:52:59.767 [DefaultDispatcher-worker-1 @call-context#2] INFO  ktor.test - Application started in 0.021 seconds.
-v2024-03-08 10:52:59.768 [DefaultDispatcher-worker-3 @coroutine#4] INFO  ktor.test - Responding at http://localhost:80
-x2024-03-08 10:52:59.769 [DefaultDispatcher-worker-3 @coroutine#4] INFO  ktor.test - Responding at https://localhost:443
-m2024-03-08 10:52:59.794 [DefaultDispatcher-worker-1 @request#2] TRACE io.ktor.routing.Routing - Trace for []
+…2024-03-21 14:04:33.451 [Test worker] INFO  ktor.test - No ktor.deployment.watch patterns specified, automatic reload is not active.
+^2024-03-21 14:04:33.461 [Test worker] INFO  ktor.test - Application started in 0.043 seconds.
+v2024-03-21 14:04:33.465 [DefaultDispatcher-worker-1 @coroutine#3] INFO  ktor.test - Responding at http://localhost:80
+x2024-03-21 14:04:33.465 [DefaultDispatcher-worker-1 @coroutine#3] INFO  ktor.test - Responding at https://localhost:443
+r2024-03-21 14:04:33.539 [DefaultDispatcher-worker-1 @request#5] TRACE io.ktor.routing.Routing - Trace for [users]
 /, segment:0 -> SUCCESS @ /
-  /, segment:0 -> SUCCESS @ /
-8    /(method:GET), segment:0 -> SUCCESS @ /(method:GET)
+(  /users, segment:1 -> SUCCESS @ /users
+L    /users/{id}, segment:1 -> FAILURE "Selector didn't match" @ /users/{id}
+F    /users/(method:POST), segment:1 -> SUCCESS @ /users/(method:POST)
 Matched routes:
-$  "" -> "<slash>" -> "(method:GET)"
+#  "" -> "users" -> "(method:POST)"
 Route resolve result:
-  SUCCESS @ /(method:GET)
-’2024-03-08 10:52:59.811 [Test worker @coroutine#1] TRACE i.k.client.plugins.HttpCallValidator - Validating response for request http://localhost/
-˜2024-03-08 10:52:59.811 [Test worker @coroutine#1] TRACE i.k.c.p.DefaultResponseValidation - Skipping default response validation for http://localhost/
-Õ2024-03-08 10:52:59.962 [Test worker @coroutine#1] TRACE i.k.c.plugins.defaultTransformers - Transformed with default transformers response body for http://localhost/ to class io.ktor.utils.io.core.ByteReadPacket
+!  SUCCESS @ /users/(method:POST)
+Ÿ2024-03-21 14:04:33.548 [DefaultDispatcher-worker-1 @request#5] TRACE i.k.server.engine.DefaultTransform - No Default Transformations found for class io.ktor.utils.io.ByteBufferChannel and expected type TypeInfo(type=class com.example.domain.helpers.requests.UserRequest, reifiedType=class com.example.domain.helpers.requests.UserRequest, kotlinType=com.example.domain.helpers.requests.UserRequest) for call /users
